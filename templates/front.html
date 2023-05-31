@@ -1,36 +1,53 @@
 <!doctype html>
 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, user-scalable=no" />
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='page.css') }}" />    
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='front.css') }}" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+
+  <title>My Portfolio</title>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-logo">
+      <!-- <img
+        src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDl2-L1_SRV6R8sk3vPCGtO5vy8LEnpUSoaoEnCXBuItx89ag78Q3MxM6HtkUixlwiYw1cSK50-P0veLIMXpbT_w-wjcpxSeH7JDOe7r_oNeMe8bX_VsydNAj90vBr1Hm-PhR2V-UJ3O2pAkUmhU4d4mg_qMGlg5r7CmzKiZ_yJzQk24lR5acOGYVX6w/s845/pop_shinsyakaijin_murisuruna.png"> -->
+    </div>
 
 
-        <title>メッセージ</title>
+  </div>
 
-    </head>
-    <body>
-        <div class = "header">
-            <div class = "header-logo">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhDl2-L1_SRV6R8sk3vPCGtO5vy8LEnpUSoaoEnCXBuItx89ag78Q3MxM6HtkUixlwiYw1cSK50-P0veLIMXpbT_w-wjcpxSeH7JDOe7r_oNeMe8bX_VsydNAj90vBr1Hm-PhR2V-UJ3O2pAkUmhU4d4mg_qMGlg5r7CmzKiZ_yJzQk24lR5acOGYVX6w/s845/pop_shinsyakaijin_murisuruna.png">
-            </div>
+    <div class="main">
+        <div class="copy-container">
+            <h1>自己紹介</h1>
+            <img src="{{ url_for('static', filename='my_portrait.jpg')}}" alt="">
+            <p>Kanakoです。神奈川県在住。</br>
+                作れるようになって、自分の好きな領域で問題解決をしていきたいです。</p>
+            <p>[好きな領域] メンタルヘルス、ヘルスケア、教育、子供、海外、言語、環境問題、Sustainability</p>
+
         </div>
-        
-        <div class = "main">  
-            <div class = "copy-container">
-            </div>
-            <div class="content">
-                <h2>生きづらさを感じるあなたに特化した、お仕事性格診断です。にこにこ<br>
-                    18個の質問に答えて、あなたがどんな特徴を持っていて、どんなことに向いているか発見してみましょう!</h2>
-                <p>今、”何かしらの生きづらさ”を感じている人が、自己理解を深め、お仕事選択の助けになれば・・との思いで作りました。</p>
-                <p>これから社会に出るけど、自分のことがわからなくて、なんとなく不安な人、今働いているけど、なんだか辛い・苦しい人、そんな人に届いて欲しいです。</p>
-            </div>
-        </div>
+    <div class="content"></div>
+  </div>
 
-        <button type="button" onclick="location.href='./page.html'">診断をはじめる</button>
-    </body>
+
+  <!-- <button type="submit">これで登録する</button> -->
+
+  </form>
+  </div>
+
+  <div>{{ result }}</div>
+  <div class="footer">
+    <div class="footer-logo"></div>
+    <div class="footer-list"></div>
+  </div>
+
+</body>
+
 </html>
 

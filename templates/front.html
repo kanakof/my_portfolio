@@ -9,7 +9,7 @@
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='front.css') }}" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 
-  <title>My Portfolio</title>
+  <title>Kanako's Room</title>
 
 </head>
 
@@ -19,8 +19,16 @@
       <img src="{{ url_for('static', filename='logo.png')}}" alt="">
     </div>
 
+    <div class="header-list">
+      <ul>
+        <li><a href="">Project/Work</a></li>
+        <li><a href="{{ url_for('static', filename='front.css') }}">Art</a></li>
+        <li><a href="{{ url_for('static', filename='front.css') }}">Article</a></li>
+      </ul>
+    </div>
 
   </div>
+
     <div class="main">
         <h1>自己紹介</h1>
         <div class="flex1">
@@ -41,7 +49,33 @@
                 <img src="{{ url_for('static', filename='my_portrait.jpg')}}" alt="">
             </p>
         </div>
-    <div class="content"></div>
+    <div class="contentwork">
+      <h1>Project/Work</h1>
+        <h2>”お仕事性格診断”を作りました。<br>
+          Python flask ,HTML ,CSSを使いました。<br>
+          是非診断してみて下さい！
+        </h2>
+        <a href="http://kanakong.pythonanywhere.com/">見に行く</a>
+    </div>
+
+    <div class="contentart">
+      <h1>Art</h1>
+        <h2>イラストを書きます。<br>
+          写真を元にリアルなイラストを書きます。
+        </h2>
+        <p>＜記念日の写真＞</p>
+        <img src="{{url_for('static', filename='kinenbi.jpg')}}" alt="">
+    </div>
+
+  <footer class="site-footer">
+    <a href="https://github.com/kanakof">
+      <img src="{{url_for('static', filename='github-mark.jpg')}}" alt="">
+    </a>
+    <a href="https://www.linkedin.com/in/kanako-fukuda-b96867153/">
+      <img src="{{url_for('static', filename='Inlogo.png')}}" alt="">
+    </a>
+  </footer>
+
   </div>
 
 
@@ -49,12 +83,12 @@
 
   </form>
   </div>
-
+<!-- 
   <div>{{ result }}</div>
   <div class="footer">
     <div class="footer-logo"></div>
     <div class="footer-list"></div>
-  </div>
+  </div> -->
 
 </body>
 

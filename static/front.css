@@ -51,14 +51,14 @@ li {
 }
 
 .portrait img{
-  width: 500px;
-  length: 500px;
+  width: 400px;
+  length: 400px;
   margin-left: 800px;
 }
 
 .fuki img{
-  width: 500px;
-  length: 500px;
+  width: 200px;
+  length: 100px;
   margin-right: 800px;
 }
 
@@ -68,8 +68,9 @@ li {
   /* color: #22e068; */
 }
 
-.content h2{
-  margin: 50px;
+.contentart img{
+  width: 400px;
+  length: 400px;
 }
 
 .content span{
@@ -119,6 +120,13 @@ button[type=submit],[type=button] {
   color:black;
 }
 
+.site-footer img{
+  width: 50px;
+  length: 50px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 .footer {
   background-color:white;
   height: 120px;
@@ -133,10 +141,10 @@ h1 {
 
 h2 {
   /* font-size:50px; */
-  background-color:whitesmoke;
+  background-color:white;
 }
 
 p {
-  font-weight:bold
+  /* font-weight:bold */
 }
 

@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="header">
+  <header>
     <div class="header-logo">
       <img src="{{ url_for('static', filename='logo.png')}}" alt="">
     </div>
@@ -26,57 +26,58 @@
         <li><a href="{{ url_for('static', filename='front.css') }}">Article</a></li>
       </ul>
     </div>
+  </header>
 
+  <div class="top-wrapper">
+      <h1>自己紹介</h1>
+      <div class="flex1">
+          <div class="box">
+              <img src="{{ url_for('static', filename='fukidashi2.png')}}" alt="">
+              <p class="fuki">Kanakoです。神奈川県在住。</br>
+                  作れるようになって、
+                  自分の好きな領域で</br>
+                  問題解決をしていきたいです。</br>
+
+                  [好きな領域]</br>
+                  メンタルヘルス、ヘルスケア、教育、子供、</br>
+                  海外、言語、環境問題、Sustainability</p>
+          </div>
+      </div>
+      <div class="flex2">
+          <p class="portrait">
+              <img src="{{ url_for('static', filename='my_portrait.jpg')}}" alt="">
+          </p>
+      </div>
   </div>
 
-    <div class="main">
-        <h1>自己紹介</h1>
-        <div class="flex1">
-            <div class="box">
-                <img src="{{ url_for('static', filename='fukidashi2.png')}}" alt="">
-                <p class="fuki">Kanakoです。神奈川県在住。</br>
-                    作れるようになって、
-                    自分の好きな領域で</br>
-                    問題解決をしていきたいです。</br>
+  <div class="contentwork">
+    <h1>Project/Work</h1>
+      <h2>”お仕事性格診断”を作りました。<br>
+        Python flask ,HTML ,CSSを使いました。<br>
+        是非診断してみて下さい！
+      </h2>
+      <a href="http://kanakong.pythonanywhere.com/">見に行く</a>
+  </div>
 
-                    [好きな領域]</br>
-                    メンタルヘルス、ヘルスケア、教育、子供、</br>
-                    海外、言語、環境問題、Sustainability</p>
-            </div>
-        </div>
-        <div class="flex2">
-            <p class="portrait">
-                <img src="{{ url_for('static', filename='my_portrait.jpg')}}" alt="">
-            </p>
-        </div>
-    <div class="contentwork">
-      <h1>Project/Work</h1>
-        <h2>”お仕事性格診断”を作りました。<br>
-          Python flask ,HTML ,CSSを使いました。<br>
-          是非診断してみて下さい！
-        </h2>
-        <a href="http://kanakong.pythonanywhere.com/">見に行く</a>
-    </div>
+  <div class="contentart">
+    <h1>Art</h1>
+      <h2>イラストを書きます。<br>
+        写真を元にリアルなイラストを書きます。
+      </h2>
+      <p>＜記念日の写真＞</p>
+      <img src="{{url_for('static', filename='kinenbi.jpg')}}" alt="">
+  </div>
 
-    <div class="contentart">
-      <h1>Art</h1>
-        <h2>イラストを書きます。<br>
-          写真を元にリアルなイラストを書きます。
-        </h2>
-        <p>＜記念日の写真＞</p>
-        <img src="{{url_for('static', filename='kinenbi.jpg')}}" alt="">
-    </div>
-
-  <footer class="site-footer">
+  <footer>
     <a href="https://github.com/kanakof">
-      <img src="{{url_for('static', filename='github-mark.jpg')}}" alt="">
+      <img src="{{url_for('static', filename='github-mark.png')}}" alt="" width="50" height="50">
     </a>
     <a href="https://www.linkedin.com/in/kanako-fukuda-b96867153/">
-      <img src="{{url_for('static', filename='Inlogo.png')}}" alt="">
+      <img src="{{url_for('static', filename='Inlogo.png')}}" alt="" width="50" height="50">
     </a>
   </footer>
 
-  </div>
+</div>
 
 
   <!-- <button type="submit">これで登録する</button> -->

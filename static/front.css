@@ -14,7 +14,7 @@ header{
   position: fixed;
 }
 
-li {
+.header-list li{
   list-style: none;
   float: left;
   padding: 30px 10px ;
@@ -32,7 +32,10 @@ li {
 
 .top-wrapper {
   background-image: url("images/fronthaikei.jpg");
+  background-size: cover;
+  /* opacity: 0.5; */
 }
+
 
 .flex1{
   flex-grow: 1; 

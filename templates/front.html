@@ -19,43 +19,45 @@
       <img src="{{ url_for('static', filename='logo.png')}}" alt="">
     </div>
 
-    <div class="header-list">
-      {% comment %} <ul>
+    <!--  <div class="header-list">
+      <ul>
         <li><a href="">Project/Work</a></li>
         <li><a href="{{ url_for('static', filename='front.css') }}">Art</a></li>
         <li><a href="{{ url_for('static', filename='front.css') }}">Article</a></li>
-      </ul> {% endcomment %}
-    </div>
+      </ul> 
+    </div> -->
   </header>
 
   <div class="top-wrapper">
       <h1>自己紹介</h1>
       <div class="flex1">
           <div class="box">
-              <img src="{{ url_for('static', filename='fukidashi2.png')}}" alt="">
+              <img src="{{ url_for('static', filename='fukidashi1.png')}}" alt="">
               <p class="fuki">Kanakoです。神奈川県在住。</br>
-                  作れるようになって、
+                  作れる力をつけて、
                   自分の好きな領域で</br>
                   問題解決をしていきたいです。</br>
 
                   [好きな領域]</br>
-                  メンタルヘルス、ヘルスケア、教育、子供、</br>
-                  海外、言語、環境問題、Sustainability</p>
+                  メンタルヘルス、教育、子供、動物、海外</p>
           </div>
-      </div>
-      <div class="flex2">
-          <p class="portrait">
-              <img src="{{ url_for('static', filename='my_portrait.jpg')}}" alt="">
-          </p>
       </div>
   </div>
 
   <div class="contentwork">
     <h1>Project/Work</h1>
-      <h2>”お仕事性格診断”を作りました。<br>
-        Python flask ,HTML ,CSSを使いました。<br>
+      <h2>仕事で悩む人たちに向けて、”お仕事性格診断”を作りました。<br>
         是非診断してみて下さい！
       </h2>
+      <h3>・言語 : Python 3、 HTML、 CSS<br>
+      ・フレームワーク : Flask・ Django<br>
+      ・ OS ： Linux、 Windows<br>
+      ・ 開発環境 ： VScode<br>
+      ・ DB ： SQLite3<br>
+      ・ CI/CD ： GitHub Actions<br>
+      ・ ソース管理 ： GitHub</h3>
+      <p></p>
+
       <a href="http://kanakong.pythonanywhere.com/">見に行く</a>
   </div>
 
@@ -64,7 +66,7 @@
       <h2>イラストを書きます。<br>
         写真を元にリアルなイラストを書きます。
       </h2>
-      <p>＜記念日の写真＞</p>
+      <h3>＜記念日の写真＞</h3>
       <img src="{{url_for('static', filename='kinenbi.jpg')}}" alt="">
   </div>
 
@@ -76,20 +78,6 @@
       <img src="{{url_for('static', filename='Inlogo.png')}}" alt="" width="50" height="50">
     </a>
   </footer>
-
-</div>
-
-
-  <!-- <button type="submit">これで登録する</button> -->
-
-  </form>
-  </div>
-<!-- 
-  <div>{{ result }}</div>
-  <div class="footer">
-    <div class="footer-logo"></div>
-    <div class="footer-list"></div>
-  </div> -->
 
 </body>
 

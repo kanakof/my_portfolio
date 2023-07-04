@@ -11,7 +11,7 @@ header{
   background-color: white;
   color: #6495ed;
   height: 90px;
-  position: fixed;
+  /* position: fixed; */
 }
 
 .header-list li{
@@ -52,29 +52,22 @@ header{
 
 .fuki {
   position: absolute;
-  top: 38%;
-  right: 50%;
+  top: 41%;
+  right: 25%;
   transform: translate(-50%, -50%);
   background-color:white;
 
 }
 
-.portrait img{
-  width: 400px;
-  length: 400px;
-  margin-left: 800px;
-}
-
-.fuki img{
-  width: 200px;
-  length: 100px;
-  margin-right: 800px;
-}
+.top-wrapper img{
+  width: 1200px;
+  length: 1200px;
+  margin: 0 auto;
+} 
 
 
 .content{
   margin: 50px;
-  /* color: #22e068; */
 }
 
 .contentart img{
@@ -140,9 +133,10 @@ h1 {
 h2 {
   /* font-size:50px; */
   background-color:white;
+  /* border-bottom: 3px dashed #3f5b96; */
 }
 
 p {
-  /* font-weight:bold */
+  font-size:30px;
 }
 

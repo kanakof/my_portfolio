@@ -1,7 +1,10 @@
 @charset "UTF-8";
 
-/* <meta name="description" content="${description}" />--> */
-/* <style media="screen"> */
+/* 追加 */
+*{
+  box-sizing: border-box;
+}
+
 body{
   text-align: center;
   font-family: "Noto Sans JP";
@@ -9,16 +12,8 @@ body{
 
 header{
   background-color: white;
-  color: #6495ed;
-  height: 90px;
+  height: 50px;
   /* position: fixed; */
-}
-
-.header-list li{
-  list-style: none;
-  float: left;
-  padding: 30px 10px ;
-  color: #fff;
 }
 
 .header-logo img{
@@ -29,34 +24,19 @@ header{
   padding-top: 20px;
 }
 
-
+/* 背景画像調整 */
 .top-wrapper {
   background-image: url("images/fronthaikei.jpg");
   background-size: cover;
+  width: 100%;
   /* opacity: 0.5; */
 }
 
-
-.flex1{
-  flex-grow: 1; 
-}
-
-.box img{
-  margin-right: 600px;
-}
-
-.flex2{
-  flex-grow: 1; 
-}
-
-
 .fuki {
   position: absolute;
-  top: 41%;
-  right: 25%;
-  transform: translate(-50%, -50%);
+  top: 35%;
+  right: 45%;
   background-color:white;
-
 }
 
 .top-wrapper img{
@@ -65,11 +45,6 @@ header{
   margin: 0 auto;
 } 
 
-
-.content{
-  margin: 50px;
-}
-
 .contentart img{
   width: 400px;
   length: 400px;
@@ -77,38 +52,6 @@ header{
 
 .content span{
   border-bottom: 3px dashed white;
-}
-
-.question, .question_other{
-  font-size:large;
-  font-weight:bold;
-  margin-top: 30px;
-  margin-left: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-}
-
-
-
-input[type=radio] {
-  transform: scale(2);
-  margin: 0 6px 0 0;
-  background-color: greenyellow;
-}
-
-button[type=submit],[type=button] {
-  border: 1px solid #dee7ec;
-  width:400px;
-  margin-top:10px;
-  margin-bottom:30px;
-  padding:20px;
-  font-size:18px;
-  margin-top: 50px;
-  /* margin-left: 20px;
-  margin-bottom: 10px;
-  margin-right: 20px; */
-  background-color:#dee7ec;
-  color:black;
 }
 
 footer img{
@@ -140,3 +83,52 @@ p {
   font-size:30px;
 }
 
+
+@media ( max-width:479px ){
+.top-wrapper {
+  background-image: url("images/fronthaikei.jpg");
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+.fuki {
+  /* position: absolute; */
+  top: 22%;
+  right: 36%;
+  background-color:white;
+}
+
+.top-wrapper img{
+  width: 400px;
+  /* length: 1200px; */
+  margin: 0 auto;
+} 
+
+.contentart img{
+  width: 380px;
+  length: 400px;
+}
+
+h1 {
+  font-weight:bold;
+  font-size:30px;
+  color: black;
+  background-color:whitesmoke;
+}
+
+h2 {
+  font-size:20px;
+  background-color:white;
+  /* border-bottom: 3px dashed #3f5b96; */
+}
+
+h3 {
+  font-size:14px;
+  background-color:#d3e4eb;
+  /* border-bottom: 3px dashed #3f5b96; */
+}
+
+p {
+  font-size:11px;
+}
+}

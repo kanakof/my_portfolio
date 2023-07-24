@@ -6,6 +6,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- ビューポートの設定 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
   <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='front.css') }}" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
 
@@ -28,20 +30,19 @@
     </div> -->
   </header>
 
+  <!-- top-wrapper修正 -->
   <div class="top-wrapper">
-      <h1>自己紹介</h1>
-      <div class="flex1">
-          <div class="box">
-              <img src="{{ url_for('static', filename='fukidashi1.png')}}" alt="">
-              <p class="fuki">Kanakoです。神奈川県在住。</br>
-                  作れる力をつけて、
-                  自分の好きな領域で</br>
-                  問題解決をしていきたいです。</br>
+    <h1>自己紹介</h1>
+    <div class="box">
+      <img src="{{ url_for('static', filename='fukidashi1.png')}}" alt="">
+      <p class="fuki">Kanakoです。神奈川県在住。</br>
+          作れる力をつけて、
+          自分の好きな領域で</br>
+          問題解決をしていきたいです。</br>
 
-                  [好きな領域]</br>
-                  メンタルヘルス、教育、子供、動物、海外</p>
-          </div>
-      </div>
+          [好きな領域]</br>
+          メンタルヘルス、教育、子供、動物、海外</p>
+    </div>
   </div>
 
   <div class="contentwork">
@@ -56,7 +57,6 @@
       ・ DB ： SQLite3<br>
       ・ CI/CD ： GitHub Actions<br>
       ・ ソース管理 ： GitHub</h3>
-      <p></p>
 
       <a href="http://kanakong.pythonanywhere.com/">見に行く</a>
   </div>

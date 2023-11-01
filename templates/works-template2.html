@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーKanako Fukuda ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Kanako Fukudaのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Kanako Fukudaのポートフォリオサイトです" />
+  <title>Kanako Fukuda ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='ress.css') }}" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">Kanako Fukuda</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href=".#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">保護猫マッチングアプリ（作成中）</h2>
+          <div class="article-body">
+            <p>
+              <img src="{{url_for('static', filename='perusonastickynote.jpg')}}" alt="">
+            </p>
+            <p>
+              今、”何かしらの生きづらさ”を感じている人が、自己理解を深め、お仕事選択の助けになれば・・との思いで作りました。<br>
+              これから社会に出るけど、自分のことがわからなくて、なんとなく不安な人、今働いているけど、なんだか辛い・苦しい人、そんな人に届いて欲しいです。
+            </p>
+            <h3>URL(Figma)</h3>
+            <p><a href="https://www.figma.com/file/XqfGy66htO9g6xoGppRPMi/catpj?type=whiteboard&node-id=0%3A1&t=9VmUTnXffVyv4PR2-1" target="_blank" rel="noopener">https://www.figma.com/file/XqfGy66htO9g6xoGppRPMi/catpj?type=whiteboard&node-id=0%3A1&t=9VmUTnXffVyv4PR2-1</a></p>
+            <h3>担当</h3>
+            <p>企画・デザイン・コーディング</p>
+            <h3>サービス概要</h3>
+            <p>熱意のある単身者に特化した、保護猫マッチングサービスです（暫定）。</p>
+            <h3>ターゲットユーザー</h3>
+            <p>・単身者<br>
+            ・ずっと猫を飼いたいと思ってきた人<br>
+            ・飼育環境、金銭面、後見人など整えた人<br>
+            ・終生飼養の覚悟と熱意を持った人</p>
+            <h3>ユーザーの抱える課題・気持ち</h3>
+            <p>単身者が応募できる保護猫ちゃんは限られていて、探すのがかなり大変。<br>
+            譲渡会に行ってみたこともあり、行動力はある。ただ、単身不可が多いので、心が折れかけている。<br>
+            </p>
+            <h3>解決方法</h3>
+            <p>coming soon</p>
+
+            <h3>デザインについて</h3>
+            <p>
+              coming soon<br>
+            </p>
+                <!-- <h3>コーディングについて</h3>
+            <p>
+              テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。
+            </p> -->
+          </div>
+          <div class="home-link">
+            <a href="./#works">Works一覧へ</a>
+          </div>
+        </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Kanako Fukuda</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>-->
+</body>
+</html>

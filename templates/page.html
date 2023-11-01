@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーKANAKO FUKUDA ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='KANAKO FUKUDAのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="KANAKO FUKUDAのポートフォリオサイトです" />
+  <title>KANAKO FUKUDA ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='ress.css') }}" />
+  <link rel="shortcut icon" href="img/favicon.ico" />
+  <link rel=”canonical” href=”URLが入る” />
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+    <header class="header ">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href=".">KANAKO FUKUDA</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="#works">WORKS</a></li>
+            <li class="gnav-item"><a href="#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+
+      <!-- mv -->
+      <div class="mv">
+        <div class="mv-container">
+          <p class="mv-title">KANAKO FUKUDA</p>
+          <p class="mv-subtitle">PORTFOLIO</p>
+          <p class="mv-text">
+            見習いUI/UXデザイナー。<br class="sp-only">独学で勉強中です。<br>
+          </p>
+        </div>
+      </div>
+      <!-- /mv -->
+
+      <!-- works -->
+      <section class="works section" id="works">
+        <div class="container">
+          <h2 class="title">PROJECTS/WORKS</h2>
+          <div class="works-list">
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="{{url_for('static', filename='capture.jpg')}}" alt=""></div>
+              <p class="works-name">職業性格診断サービス</p>
+              <p class="works-info">Design / Coding(Responsive)</p>
+            </a>
+            <a class="works-item" href="works-template2.html">
+              <div class="works-img"><img src="{{url_for('static', filename='stickynote.jpg')}}" alt=""></div>
+              <p class="works-name">保護猫マッチングアプリ（作成中）</p>
+              <p class="works-info">UXDesign / UIDesign(Responsive)</p>
+            </a>
+           <a class="works-item">
+              <div class="works-img"><img src="{{url_for('static', filename='kinenbi.jpg')}}" alt=""></div>
+              <p class="works-name">イラスト</p>
+              <p class="works-info">Drawing</p>
+            </a>
+             <!-- <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>
+            <a class="works-item" href="works-template.html">
+              <div class="works-img"><img src="img/works-dummy-thumb.jpg" alt="" /></div>
+              <p class="works-name">作品名が入る</p>
+              <p class="works-info">Banner Design</p>
+            </a>-->
+          </div>
+        </div>
+      </section>
+      <!-- /works -->
+
+      <!-- skill -->
+      <section class="skill section" id="skill">
+        <div class="container">
+          <h2 class="title">SKILL</h2>
+          <div class="skill-list">
+            <div class="skill-item">
+              <p class="skill-img"><img src="{{url_for('static', filename='htmlcss.png')}}" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">HTML5/CSS3</h3>
+                <p class="skill-text">
+                  レスポンシブ対応、クラスの命名規則に従ったコーディングが出来ます。<br class="sp-only">使用エディタはVisualStudioCodeです。<br>
+                  </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="{{url_for('static', filename='figma.png')}}" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Figma</h3>
+                <p class="skill-text">
+                  UXDesignにおける、ペルソナ、マインドマップなどを作成できます。<br class="sp-only">Figmaを使ったUIデザインは勉強中です。<br>
+                  </p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="{{url_for('static', filename='python.png')}}" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Python3</h3>
+                <p class="skill-text">
+                  DjangoやFlaskなどのフレームワークを使って、WebAppが開発できます。<br class="sp-only">DB設計なども簡単はものであれば設計できます。<br>
+                  </p>
+              </div>
+            </div>
+            <!-- <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Photoshop</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">Illustrator</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <p class="skill-img"><img src="img/icon_skill.png" alt=""></p>
+              <div class="skill-body">
+                <h3 class="skill-name">XD</h3>
+                <p class="skill-text">
+                  テキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入りますテキストが入ります。</p>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+      <!-- /skill -->
+
+      <!-- about -->
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="title">ABOUT</h2>
+          <div class="profile">
+            <p class="profile-img">
+              <img src="{{ url_for('static', filename='my_portrait.png')}}" alt="">
+            </p>
+            <div class="profile-body">
+              <p>
+              <br><br />
+                Kanakoです。神奈川県在住。<br>
+                作れる力をつけて、 自分の好きな領域で問題解決をしていきたいです。
+              </p>
+              <p>
+                [好きな領域] メンタルヘルス、教育、子供、動物、海外
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /about -->
+
+      <!-- contact -->
+      <section class="contact section" id="contact">
+        <div class="container">
+          <h2 class="title">CONTACT</h2>
+          <p class="lead">
+            お問い合わせは、<br class="sp-only">SNSかメールにてお願いいたします。
+          </p>
+          <div class="contact-list">
+            <a class="contact-item" href="https://github.com/kanakof" target="_blank" rel="noopener">GitHub</a>
+            <a class="contact-item" href="https://www.linkedin.com/in/kanako-fukuda-b96867153/" target="_blank" rel="noopener">LinkedIn</a>
+            <span class="contact-item">kanakofukuda199531@gmail.com</span>
+          </div>
+        </div>
+      </section>
+      <!-- /contact -->
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;KANAKO FUKUDA</div>
+    </footer>
+    <!-- /footer -->
+
+  </div>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src="js/script.js"></script>-->
+</body>
+</html>
